@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:layout_height="65dp">
+
+    <LinearLayout
+        android:id="@+id/tab_weixin"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:clickable="false"
+            android:id="@+id/tab_weixin_img"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/weixin_anse"
+            android:background="#0000"
+             />
+
+        <TextView
+            android:text="微信"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_friend"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <!--当点击图片按钮没有作用时可设置： android:clickable="false" 图片不可点击即让LinearLayout 去实现点击事件-->
+        <ImageButton
+            android:clickable="false"
+            android:id="@+id/tab_friend_img"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/friend_anse"
+            android:background="#00000000"
+            />
+        <!--android:background="#00000000"  设置为透明 和四个0效果一样-->
+
+        <TextView
+            android:text="朋友"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_address"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:clickable="false"
+            android:id="@+id/tab_address_img"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/zhibo_anse"
+            android:background="#00000000"
+            />
+
+        <TextView
+            android:text="直播"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_setting"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:clickable="false"
+            android:id="@+id/tab_setting_img"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/shezhi_anse"
+            android:background="#00000000"
+            />
+
+        <TextView
+            android:text="设置"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
